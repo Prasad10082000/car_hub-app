@@ -11,9 +11,6 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
   const router=useRouter();
   const handleUpadateParams = (e:{type:string,value:string}) =>{
     const newPathName = updateSearchParams(title,e.value.toLocaleUpperCase());
-
-   
-
     router.push(newPathName)
   }
 
@@ -47,7 +44,7 @@ const CustomFilter = ({ title, options }: CustomFilterProps) => {
                       active ? "bg-primary-blue text-white" : "text-gray-900"
                     }`
                   }
-                >
+                > 
                   {({ selected }) => <span>{option.title}</span>}
                 </Listbox.Option>
               ))}

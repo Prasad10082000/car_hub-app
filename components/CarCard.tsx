@@ -9,6 +9,7 @@ import CarDetails from "./CarDetails";
 interface CarCardProps {
   car: CarProps;
 }
+
 const CarCard = ({ car }: CarCardProps) => {
   const { city_mpg, drive, make, model, transmission, year } = car;
   const carRent = calculateCarRent(city_mpg, year);

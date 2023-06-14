@@ -17,6 +17,7 @@ const Hero = () => {
         </p>
 
         <CustomButton
+        isDisabled
           title="Explore Cars"
           continerStyles="bg-primary-blue text-white rounded-full mt-10"
           handleClick={handleScroll}

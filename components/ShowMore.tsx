@@ -19,6 +19,7 @@ const ShowMore = ({pageNumber,isNext}:ShowMoreProps) => {
         {
             !isNext && (
                 <CustomButton
+                isDisabled
                 title="Show More"
                 btnType="button"
                 continerStyles="bg-primary-blue rounded-full text-white"
